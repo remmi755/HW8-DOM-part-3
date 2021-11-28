@@ -1,20 +1,17 @@
 function increaseAndDecrease (a, b) {
-    let res;
     if ( a === b) {
         console.log(a)
     } else if(a < b) {
-        res =  increaseAndDecrease(a, b-1)
+        a =  increaseAndDecrease(a, b-1)
         console.log(b)
-        return res
+        return a
     } else if (a > b) {
         console.log(a)
-        res = increaseAndDecrease(a - 1, b)
-    return res
+        b = increaseAndDecrease(a - 1, b)
+    return b
 }
 }
-increaseAndDecrease(20,25)
-
-
+increaseAndDecrease(13,7)
 
 
 let timeShow = document.getElementById('clock');
